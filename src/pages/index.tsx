@@ -109,16 +109,28 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
       <Container>
-        <HorizontalSpacer spacing={6} />
-        <Row align="center">
+        <Hidden xs>
+          <HorizontalSpacer spacing={6} />
+        </Hidden>
+        <Visible xs>
+          <HorizontalSpacer spacing={2} />
+        </Visible>
+        <Row align="center" justify="center">
           <Col md={4}>
-            <img
-              src="https://vasakok.se/wp-content/uploads/2023/05/logo-vasakok.png"
-              alt="Vasa kök logga"
-            />
+            <a href="https://vasakok.se">
+              <img
+                src="https://vasakok.se/wp-content/uploads/2023/05/logo-vasakok.png"
+                alt="Vasa kök logga"
+              />
+            </a>
           </Col>
         </Row>
-        <HorizontalSpacer spacing={4} />
+        <Hidden xs>
+          <HorizontalSpacer spacing={4} />
+        </Hidden>
+        <Visible xs>
+          <HorizontalSpacer spacing={2} />
+        </Visible>
         <div style={{ position: "relative" }}>
           <HeroImage
             src="https://i0.wp.com/vasakok.se/wp-content/uploads/2023/05/Tenori-swe-2-1.jpg?w=2048&ssl=1"
@@ -150,7 +162,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <HorizontalSpacer spacing={2} />
             <Row>
               <div style={{ fontSize: 24 }}>
-                Kontakta våra köksexperter direkt eller bokat ett konstadfritt
+                Kontakta våra köksexperter direkt eller boka ett konstadfritt
                 hembesök direkt via hemsidan
               </div>
             </Row>
@@ -195,7 +207,7 @@ const IndexPage: React.FC<PageProps> = () => {
               <div style={{ fontSize: 32, fontWeight: 700 }}>VasaKök</div>
               <HorizontalSpacer spacing={2} />
               <div style={{ fontSize: 20 }}>
-                Vi bygger hållbara och funktionella kök i Vänersborg.
+                Vi bygger hållbara och funktionella kök kring Göteborgsområdet.
               </div>
             </Col>
             <Col md={4}>
