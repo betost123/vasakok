@@ -109,7 +109,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
       <Container>
-        <HorizontalSpacer spacing={4} />
+        <HorizontalSpacer spacing={6} />
         <Row align="center">
           <Col md={4}>
             <img
@@ -187,7 +187,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </BookButton>
         </a>
       </Container>
-      <HorizontalSpacer spacing={3} />
+      <HorizontalSpacer spacing={4} />
       <Footer>
         <Container>
           <Row justify="between" gutterWidth={60}>
@@ -252,4 +252,4 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <title>VasaKök Vänersborg</title>;
