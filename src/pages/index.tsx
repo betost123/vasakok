@@ -19,7 +19,7 @@ const HorizontalSpacer = styled.div<{ spacing: number }>`
 const pageStyles = {
   color: "#232129",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  backgroundColor: "#ecebe4",
+  backgroundColor: "#f4efe8",
   overflowX: "hidden",
 };
 
@@ -133,16 +133,16 @@ const IndexPage: React.FC<PageProps> = () => {
         </Visible>
         <div style={{ position: "relative" }}>
           <HeroImage
-            src="https://i0.wp.com/vasakok.se/wp-content/uploads/2023/05/Tenori-swe-2-1.jpg?w=2048&ssl=1"
-            alt="Kök av VasaKök"
+            src="https://i0.wp.com/vasakok.se/wp-content/uploads/2023/05/Swing-V484-a-1-scaled.jpg?resize=1365%2C2048&ssl=1"
+            alt="Köksbild av VasaKök - Vasa kök Kungsbacka"
           />
           <IntroTextBox>
             <Row justify="center">
-              <LargeText>50% rabatt på köksluckor*</LargeText>
+              <LargeText>Just nu - 50% på köksluckor*</LargeText>
             </Row>
             <HorizontalSpacer spacing={2} />
             <Row justify="center">
-              <Subtext>Nya luckor på befintliga stommar i Vänersborg</Subtext>
+              <Subtext>Nya luckor på befintliga stommar i Kungsbacka</Subtext>
             </Row>
             <HorizontalSpacer spacing={2} />
             <Row justify="center">
@@ -156,14 +156,13 @@ const IndexPage: React.FC<PageProps> = () => {
           <Col md={6} style={{ padding: "2rem" }}>
             <Row>
               <div style={{ fontSize: 32, fontWeight: 600 }}>
-                Vi byter luckor i Vänersborg
+                Behöver du nya köksluckor?
               </div>
             </Row>
             <HorizontalSpacer spacing={2} />
             <Row>
               <div style={{ fontSize: 24 }}>
-                Kontakta våra köksexperter direkt eller boka ett konstadfritt
-                hembesök direkt via hemsidan
+                Kontakta våra köksexperter direkt för ett konstadfritt hembesök
               </div>
             </Row>
             <HorizontalSpacer spacing={2} />
@@ -186,8 +185,8 @@ const IndexPage: React.FC<PageProps> = () => {
           </Col>
           <Col md={6}>
             <BoxImage
-              src="https://i0.wp.com/vasakok.se/wp-content/uploads/2023/05/nastan-swing-40.jpeg?w=612&ssl=1"
-              alt="Kök Vasa Kök Vänersborg"
+              src="https://i0.wp.com/vasakok.se/wp-content/uploads/2023/05/Swing-V484-1-1-scaled.jpg?w=2560&ssl=1"
+              alt="Kök Vasa Kök Kungsbacka"
             />
           </Col>
         </Row>
@@ -264,4 +263,4 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>VasaKök Vänersborg</title>;
+export const Head: HeadFC = () => <title>VasaKök Kungsbacka</title>;
